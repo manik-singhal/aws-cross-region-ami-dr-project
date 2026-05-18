@@ -6,24 +6,9 @@ Built as part of the **DevOps + SRE Daily Challenge Series**.
 
 ---
 
-## Architecture
+## Architecture Diagram
 
-```
-Source Region: us-east-1 (N. Virginia)
-Target Region: us-west-1 (N. California)
-
-EC2 (us-east-1)
-   ↓ Nginx + SSH Hardening
-Custom AMI
-   ↓ Copy AMI
-EC2 (us-west-1) ← Launched from copied AMI
-
-EBS Snapshot (us-east-1)
-   ↓ Copy Snapshot
-EBS Volume (us-west-1) ← Restored and attached
-```
-
----
+![Architecture Diagram](architecture/architecture-diagram.png)
 
 ## Project Structure
 
